@@ -1,0 +1,7 @@
+-r base.txt 
+
+psycopg2-binary==2.9.9
+
+flake8==7.1.0
+inflection==0.5.1
+isort==5.13.2

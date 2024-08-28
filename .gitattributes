@@ -1,0 +1,51 @@
+# Handle all files with automatic line ending conversion
+* text=auto
+
+# Override for specific file types (if needed)
+*.sh text eol=lf       # Ensure shell scripts always use LF
+*.bat text eol=crlf    # Ensure batch files always use CRLF
+*.md text              # Markdown files, auto-handled based on OS
+*.py text              # Python scripts, auto-handled based on OS
+
+# Explicitly set file types to be treated as text
+*.py text
+*.html text
+*.css text
+*.js text
+*.json text
+*.xml text
+*.md text
+*.txt text
+*.csv text
+
+# Prevent generated binary files from being diffed
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+*.tgz binary
+
+# Django specific: Treat migration files as text
+migrations/*.py text
+
+# Handle large media files (optional, if your project includes media)
+media/* binary
+
+# Handle static files (optional, if you don't want diffs on these)
+static/* binary
+
+# Documentation files (if applicable)
+*.rst text
+
+# Virtual environment (if you accidentally add it to Git)
+venv/* -diff -merge
+.env/* -diff -merge
+
+# Treat binary files in other known directories as binary (if any)
+bin/* binary
+*.exe binary
+*.dll binary

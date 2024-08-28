@@ -1,0 +1,6 @@
+DEBUG=True
+SECRET_KEY=9Y3A5FzhR-8JP5CuBS5nrnJ1x7Z7cJLGfpIwte9D_O2rU_ftRDo
+DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
+EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+EMAIL_HOST=mailhog
+EMAIL_PORT=1025
